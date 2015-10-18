@@ -24,7 +24,7 @@ require.def("calculatrice/js/app",
 		return Component.extend({ 
 			init: function(){ 
 			var self = this; 
-			this._super("appcalculatrice"); 
+			this._super("appkeyboard"); 
 
 
 
@@ -32,7 +32,7 @@ require.def("calculatrice/js/app",
 			this._application = this.getCurrentApplication();
 			this._device = this._application.getDevice();
 
-			var clavier = new Clavier("clavier",11,4, "alphanum");
+			var clavier = new Clavier("clavier",12,5, "alphanum");
 
 			//zone de saisie
 			var afficheComponent = new Component("afficheComponent");
